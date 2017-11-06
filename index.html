@@ -1,57 +1,68 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>🏫 Index des TP</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> index des tp </title>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>🏫 Page d'index des TP 🎒</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello ☀️️</p>
-        <img src="galilee.png" alt="Logo Galilee"/>
-      
-      <ul>
-        <li>
-          <a href="tp1/index.html">/TP1</a>
-        </li>
-        <li>
-          <a href="tp2/index.html">/TP2</a>
-        </li>
-        <li>
-          <a href="tp3/index.html">/TP3</a>
-        </li>
-        <li>
-          <a href="tp4/index.html">/TP4</a>
-        </li>
-        <li>
-          <a href="tp5/index.html">/TP5</a>
-        </li>
-        <li>
-          <a href="tp6/index.html">/TP6</a>
-        </li>
-        <li>
-          <a href="tp7/index.html">/TP7</a>
-        </li>
-      </ul>
-    </body>
-</html>
+<link rel="stylesheet" href="formulaire.css"/>
+<script type="text/javascript" src="error.js"></script>
+</head>
+
+<body>
+
+<h1>Saisie d'une fiche personne</h1>
+<table width=41%>
+          <p>
+          <td>  <LABEL FOR="NOM"> Nom </LABEL> </td>
+          <td>  <INPUT TYPE="TEXT"   ID="NOM"> </td>
+            </p>
+          </tr>
+          <tr>
+            <p>
+              <td> <LABEL FOR="PRENOM"> Prenom </LABEL> </td>
+            <td>  <INPUT TYPE="TEXT"   ID="PRENOM"> </td>
+
+              </p>
+            </tr>
+
+            <tr>
+              <p>
+
+              <td>  <LABEL FOR="Date_de_naissance"> Date de naissance </LABEL>  </td>
+                <td>  <INPUT TYPE="datetime-local"   ID="Date de naissance" placeholder="jj/mm/aaaa"> </td>
+                </p>
+              </tr>
+
+              <tr>
+                <p>
+
+                <td>  <LABEL FOR="Adresse"> Adresse </LABEL>  </td>
+                  <td>  <INPUT TYPE="TEXT"   ID="Adresse"> </td>
+                  </p>
+                </tr>
+
+                <tr>
+                  <p>
+
+                  <td>  <LABEL FOR="Mail"> Mail </LABEL>  </td>
+                    <td>  <INPUT TYPE="TEXT"   ID="Mail"> </td>
+                    </p>
+                  </tr>
+
+                   <tr>
+                     <p>
+                       <td> </td>
+                      <td> <button TYPE="submit" ID="valider"> Valider </button> </td>
+                     </p>
+                   </tr>
+                 </table>
+
+
+
+  	 <div id="error" hidden></div>
+     <div id="result" hidden></div>
+
+  	 </body>
+  </html>
