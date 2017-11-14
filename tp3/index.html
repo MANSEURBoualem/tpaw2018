@@ -12,22 +12,82 @@
 
         <style>
           body{
-              background-color: #e9ebee;              
+              background-color: #e9ebee;
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
               margin: 0 auto;
-              max-width: 800px;              
+              max-width: 800px;
           }
         </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/form-jquery-validation.js"></script>
+
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+    <body>
+      <div class="container">
+  <form>
+              <h1><center>TP AW - Formulaire v2 </center></h1>
+
+    <div>
+    <label>
+      Nom
+              </label><center><input name="Nom" type="text" size="50" id="Nom" value="" /></center>
+              </div>
+    <div>
+    <label>
+     Prenom
+               </label> <center><input name="Prenom" type="text" size="50" id="Prenom" value="" /></center>
+    </div>
+    <div>
+    <label>
+      Date de naissance
+                </label> <center><input name="Date de naissance" type="date" id="date" placeholder="JJ/MM/AAAA" size="50" value="" /></center>
+                </div>
+    <div>
+    <label>
+      Adresse
+               </label> <center><input name="Adresse" type="text" size="50" id="Adresse" value="" /></center>
+               </div>
+    <div>
+    <label>
+      Mail
+             </label> <center><input name="Mail" type="text" size="50" id="Mail" value="" /></center>
+             </div>
+
+    <div>
+           <button type="button" class="btn btn-primary" id="button" >Valider</button>
+           </div>
+    </form>
+
+        <!-- Modal   -->
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Veuillez remplir tous les champs svp </p>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<a data-toggle='modal' href="#myModal_"></a>
+
+
+</body>
 </html>
