@@ -4,8 +4,8 @@ $(document).ready(function () {
         event.preventDefault();
         if ($("#Inputnom").val() == ""
             || $("#Inputprenom").val() == ""
-            || $("#inputdatedenaissance").val() == ""
-            || $("#inputAdresse").val() == ""
+            || $("#Inputdatedenaissance").val() == ""
+            || $("#InputAdresse").val() == ""
             || $("#InputEmail").val() == "") {
             alert("veuillez remplir tous les champs")
         } else {
